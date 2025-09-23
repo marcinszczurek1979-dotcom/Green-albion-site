@@ -6,6 +6,7 @@
   <title>Green Albion Landscaping</title>
   <meta name="description" content="Garden design and maintenance — simple, elegant and sustainable." />
 
+  <!-- Open Graph / Social -->
   <meta property="og:title" content="Green Albion Landscaping" />
   <meta property="og:description" content="Simple, elegant and sustainable gardens in Herefordshire." />
   <meta property="og:type" content="website" />
@@ -17,6 +18,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preload" as="image" href="images/user02.jpg">
+
+  <!-- Minimal styles only for the icon list -->
+  <style>
+    .why-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 22px}
+    @media (max-width:640px){.why-list{grid-template-columns:1fr}}
+    .why-list li{display:flex;gap:10px;align-items:flex-start}
+    .why-list .icon{flex:0 0 22px;line-height:0;color:var(--accent);margin-top:2px}
+    .why-list .icon svg{display:block;width:22px;height:22px}
+  </style>
 </head>
 <body>
 
@@ -55,15 +65,15 @@
   <section class="container">
     <h2>Simple &amp; Elegant</h2>
     <p>
-      The most beautiful gardens do not shout. They are functional, calm and natural, settling gently into their place. 
-      Our approach favours clear structure, generous space and soft transitions that feel effortless. 
-      Planting choices are resilient and wildlife-friendly, supporting pollinators and seasonal interest without fuss. 
-      We work with rhythm and proportion so the garden looks composed in spring rain, high summer and misty autumn alike. 
-      Subtle hedging, meadow edges and layered borders echo the quiet character of British landscapes. 
-      Water-wise strategies and thoughtful maintenance keep the footprint light while the garden matures with dignity. 
-      Simplicity becomes elegance when textures, forms and tones are balanced rather than overdecorated. 
-      By reducing what is unnecessary, the important elements breathe — paths are clearer, views are calmer, colours read true. 
-      Each space is designed to invite birds, bees and people to linger, without demanding constant attention. 
+      The most beautiful gardens do not shout. They are functional, calm and natural, settling gently into their place.
+      Our approach favours clear structure, generous space and soft transitions that feel effortless.
+      Planting choices are resilient and wildlife-friendly, supporting pollinators and seasonal interest without fuss.
+      We work with rhythm and proportion so the garden looks composed in spring rain, high summer and misty autumn alike.
+      Subtle hedging, meadow edges and layered borders echo the quiet character of British landscapes.
+      Water-wise strategies and thoughtful maintenance keep the footprint light while the garden matures with dignity.
+      Simplicity becomes elegance when textures, forms and tones are balanced rather than overdecorated.
+      By reducing what is unnecessary, the important elements breathe — paths are clearer, views are calmer, colours read true.
+      Each space is designed to invite birds, bees and people to linger, without demanding constant attention.
       The result is a harmonious, enduring garden that belongs to its setting and grows more authentic with every season.
     </p>
   </section>
@@ -92,17 +102,47 @@
     </div>
   </section>
 
-  <!-- Why Green Albion -->
+  <!-- Why Green Albion with icons -->
   <section class="container wide-gap">
     <div class="card soft">
       <h2>Why Green Albion</h2>
-      <ul>
-        <li>Design shaped around your lifestyle and the local climate</li>
-        <li>Options for every budget, with clear scopes and the ability to phase work</li>
-        <li>Transparent pricing and reliable timelines from first sketch to completion</li>
-        <li>Low-maintenance planting and structure that remain composed year-round</li>
-        <li>Wildlife-friendly, water-wise choices that respect the character of British landscapes</li>
-        <li>End-to-end support and considerate aftercare to keep your garden at its best</li>
+      <ul class="why-list">
+        <li>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13c6.5.5 9.5-2.5 10-9 3.5 3.5 4.5 10-1 15-3.5 3.5-8.5 4-12 3 1-3.5-.5-8.5 3-12z"/></svg>
+          </span>
+          <span>Design shaped around your lifestyle and the local climate</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13c6.5.5 9.5-2.5 10-9 3.5 3.5 4.5 10-1 15-3.5 3.5-8.5 4-12 3 1-3.5-.5-8.5 3-12z"/></svg>
+          </span>
+          <span>Options for every budget, with clear scopes and the ability to phase work</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13c6.5.5 9.5-2.5 10-9 3.5 3.5 4.5 10-1 15-3.5 3.5-8.5 4-12 3 1-3.5-.5-8.5 3-12z"/></svg>
+          </span>
+          <span>Transparent pricing and reliable timelines from first sketch to completion</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13c6.5.5 9.5-2.5 10-9 3.5 3.5 4.5 10-1 15-3.5 3.5-8.5 4-12 3 1-3.5-.5-8.5 3-12z"/></svg>
+          </span>
+          <span>Low-maintenance planting and structure that remain composed year-round</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13c6.5.5 9.5-2.5 10-9 3.5 3.5 4.5 10-1 15-3.5 3.5-8.5 4-12 3 1-3.5-.5-8.5 3-12z"/></svg>
+          </span>
+          <span>Wildlife-friendly, water-wise choices that respect the character of British landscapes</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 13c6.5.5 9.5-2.5 10-9 3.5 3.5 4.5 10-1 15-3.5 3.5-8.5 4-12 3 1-3.5-.5-8.5 3-12z"/></svg>
+          </span>
+          <span>End-to-end support and considerate aftercare to keep your garden at its best</span>
+        </li>
       </ul>
     </div>
   </section>
@@ -147,3 +187,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
