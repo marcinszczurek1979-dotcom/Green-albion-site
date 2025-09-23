@@ -35,7 +35,12 @@
       <h3>Contact form</h3>
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
         <input type="hidden" name="form-name" value="contact">
-        <p class="hidden"><label>Do not fill: <input name="bot-field" /></label></p>
+
+        <!-- neutral honeypot -->
+        <p class="hidden" aria-hidden="true">
+          <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+        </p>
+
         <label>Full name<input type="text" name="name" required></label>
         <label>Email<input type="email" name="email" required></label>
         <label>Phone<input type="tel" name="phone"></label>
