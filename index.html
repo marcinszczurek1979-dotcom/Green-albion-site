@@ -162,9 +162,12 @@
       <h4>Newsletter</h4>
       <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
         <input type="hidden" name="form-name" value="subscribe" />
-        <p class="hidden">
-          <label>Do not fill: <input name="bot-field" /></label>
+
+        <!-- neutral honeypot -->
+        <p class="hidden" aria-hidden="true">
+          <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
         </p>
+
         <div class="row">
           <input type="email" name="email" placeholder="Your email" required>
           <button type="submit">Subscribe</button>
@@ -187,4 +190,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-
