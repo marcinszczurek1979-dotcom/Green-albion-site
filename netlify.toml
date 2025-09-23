@@ -1,0 +1,4 @@
+# Minimal Netlify config for a plain static site
+[build]
+  publish = "."
+  command = ""
