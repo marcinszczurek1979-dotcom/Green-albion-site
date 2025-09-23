@@ -5,18 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Green Albion Landscaping</title>
   <meta name="description" content="Garden design and maintenance — simple, elegant and sustainable." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Green Albion Landscaping" />
+  <meta property="og:description" content="Simple, elegant and sustainable gardens in Herefordshire." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/user02.jpg" />
+  <link rel="canonical" href="/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Preload hero for faster first paint -->
+  <link rel="preload" as="image" href="images/user02.jpg">
 </head>
 <body>
 
-<header class="site-header">
+<a href="#main" class="hidden">Skip to content</a>
+
+<header class="site-header" role="banner">
   <div class="container flex between center">
-    <a class="logo" href="index.html">Green Albion Landscaping</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
+    <a class="logo" href="index.html" aria-label="Green Albion Landscaping — home">Green Albion Landscaping</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
@@ -24,7 +36,10 @@
   </div>
 </header>
 
-<section class="hero" style="background-image:url('images/user02.jpg');">
+<!-- Hero with contrasty gradient overlay on your photo -->
+<section class="hero" style="background-image:
+  linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35)),
+  url('images/user02.jpg');">
   <div class="hero-inner container">
     <p class="kicker">BUSINESS CARD</p>
     <h1 class="brand">GREEN ALBION LANDSCAPING</h1>
@@ -35,32 +50,36 @@
     </div>
   </div>
 </section>
-<section class="container split">
-  <div>
-    <h2>Simple & Elegant</h2>
-    <p>The most beautiful gardens don’t shout. They’re functional, calm and natural. 
-    We focus on resilient plant palettes, water-wise solutions and durable materials.</p>
-  </div>
-  <div class="card">
-    <h3>Why Green Albion</h3>
-    <ul>
-      <li>Design tailored to your lifestyle and local climate</li>
-      <li>Less fuss — more harmony</li>
-      <li>Clear pricing and timelines</li>
-    </ul>
-  </div>
-</section>
-<section class="container">
-  <h2>Featured Gardens</h2>
-  <div class="gallery grid">
-    <a href="images/user01.jpg" class="tile"><img loading="lazy" src="images/user01.jpg" alt="Garden 1"></a>
-    <a href="images/user02.jpg" class="tile"><img loading="lazy" src="images/user02.jpg" alt="Garden 2"></a>
-    <a href="images/user03.png" class="tile"><img loading="lazy" src="images/user03.png" alt="Garden 3"></a>
-    <a href="images/user04.png" class="tile"><img loading="lazy" src="images/user04.png" alt="Garden 4"></a>
-    <a href="images/user05.png" class="tile"><img loading="lazy" src="images/user05.png" alt="Garden 5"></a>
-    <a href="images/user06.png" class="tile"><img loading="lazy" src="images/user06.png" alt="Garden 6"></a>
-  </div>
-</section>
+
+<main id="main">
+  <section class="container split">
+    <div>
+      <h2>Simple &amp; Elegant</h2>
+      <p>The most beautiful gardens don’t shout. They’re functional, calm and natural.
+      We focus on resilient plant palettes, water-wise solutions and durable materials.</p>
+    </div>
+    <div class="card">
+      <h3>Why Green Albion</h3>
+      <ul>
+        <li>Design tailored to your lifestyle and local climate</li>
+        <li>Less fuss — more harmony</li>
+        <li>Clear pricing and timelines</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Featured Gardens</h2>
+    <div class="gallery grid">
+      <a href="images/user01.jpg" class="tile"><img loading="lazy" src="images/user01.jpg" alt="Stone path through flowering borders"></a>
+      <a href="images/user02.jpg" class="tile"><img loading="lazy" src="images/user02.jpg" alt="Wide lawn with soft curved beds"></a>
+      <a href="images/user03.png" class="tile"><img loading="lazy" src="images/user03.png" alt="Neat paved path with evergreen hedge"></a>
+      <a href="images/user04.png" class="tile"><img loading="lazy" src="images/user04.png" alt="Open lawn under blue sky with mixed borders"></a>
+      <a href="images/user05.png" class="tile"><img loading="lazy" src="images/user05.png" alt="Minimalist lawn with gravel edge and trees"></a>
+      <a href="images/user06.png" class="tile"><img loading="lazy" src="images/user06.png" alt="Curved border with seasonal color"></a>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="container grid-3">
@@ -85,12 +104,16 @@
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
-      07703149949<br/>
-      Herefordshire, UK</p>
+      <p>
+        <a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
+        <a href="tel:+447703149949">07703149949</a><br/>
+        Herefordshire, UK
+      </p>
     </div>
   </div>
   <div class="container tiny">© 2025 Green Albion Landscaping</div>
 </footer>
+
 <script src="js/main.js"></script>
-</body></html>
+</body>
+</html>
