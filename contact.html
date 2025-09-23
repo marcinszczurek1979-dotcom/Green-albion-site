@@ -33,21 +33,39 @@
   <div class="grid-2">
     <div class="card">
       <h3>Contact form</h3>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+      <!-- Netlify will store: first_name, email, phone, message -->
+      <form name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thanks.html">
         <input type="hidden" name="form-name" value="contact">
 
-        <!-- neutral honeypot -->
+        <!-- neutral honeypot (hidden anti-spam) -->
         <p class="hidden" aria-hidden="true">
           <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
         </p>
 
-        <label>Full name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Phone<input type="tel" name="phone"></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <label>First name
+          <input type="text" name="first_name" required>
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>Phone
+          <input type="tel" name="phone" placeholder="+44 ..." required>
+        </label>
+
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
         <button type="submit" class="btn">Send</button>
       </form>
     </div>
+
     <div class="card">
       <h3>Direct</h3>
       <p>
