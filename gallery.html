@@ -3,46 +3,78 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Green Albion Landscaping</title>
-  <meta name="description" content="Garden design and maintenance — simple, elegant and sustainable." />
+  <title>Gallery — Green Albion Landscaping</title>
+  <meta name="description" content="A selection of calm, elegant gardens shaped for British landscapes." />
+  <link rel="canonical" href="https://greenalbion.co.uk/gallery.html" />
+
+  <meta property="og:title" content="Gallery — Green Albion Landscaping" />
+  <meta property="og:description" content="Calm, elegant gardens shaped for British landscapes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://greenalbion.co.uk/gallery.html" />
+  <meta property="og:image" content="https://greenalbion.co.uk/images/user01.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery — Green Albion Landscaping" />
+  <meta name="twitter:description" content="Calm, elegant gardens shaped for British landscapes." />
+  <meta name="twitter:image" content="https://greenalbion.co.uk/images/user01.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
 <header class="site-header" role="banner">
   <div class="container flex between center">
-    <a class="logo" href="index.html">Green Albion Landscaping</a>
+    <a class="logo" href="index.html" aria-label="Green Albion Landscaping — home">Green Albion Landscaping</a>
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
-<section class='page-header'><div class='container'><h1>Gallery</h1><p>Natural, simple and elegant.</p></div></section>
-<section class='container'><div class='gallery grid'>
-  <a href='images/user01.jpg' class='tile'><img loading='lazy' src='images/user01.jpg' alt='Garden photo 1'></a>
-  <a href='images/user02.jpg' class='tile'><img loading='lazy' src='images/user02.jpg' alt='Garden photo 2'></a>
-  <a href='images/user03.png' class='tile'><img loading='lazy' src='images/user03.png' alt='Garden photo 3'></a>
-  <a href='images/user04.png' class='tile'><img loading='lazy' src='images/user04.png' alt='Garden photo 4'></a>
-  <a href='images/user05.png' class='tile'><img loading='lazy' src='images/user05.png' alt='Garden photo 5'></a>
-  <a href='images/user06.png' class='tile'><img loading='lazy' src='images/user06.png' alt='Garden photo 6'></a>
-  <a href='images/user07.png' class='tile'><img loading='lazy' src='images/user07.png' alt='Garden photo 7'></a>
-  <a href='images/user08.png' class='tile'><img loading='lazy' src='images/user08.png' alt='Garden photo 8'></a>
-</div></section>
+
+<main id="main">
+  <section class="page-header">
+    <div class="container">
+      <h1>Gallery</h1>
+      <p>A curated view of our gardens — blending British elegance with nature-friendly design.</p>
+    </div>
+  </section>
+
+  <section class="container" style="margin-top:40px">
+    <div class="gallery grid">
+      <a href="images/user01.jpg" class="tile"><img loading="lazy" src="images/user01.jpg" alt="Stone path through flowering borders"></a>
+      <a href="images/user02.jpg" class="tile"><img loading="lazy" src="images/user02.jpg" alt="Wide lawn with soft curved beds"></a>
+      <a href="images/user03.png" class="tile"><img loading="lazy" src="images/user03.png" alt="Neat paved path with evergreen hedge"></a>
+      <a href="images/user04.png" class="tile"><img loading="lazy" src="images/user04.png" alt="Open lawn under blue sky with mixed borders"></a>
+      <a href="images/user05.png" class="tile"><img loading="lazy" src="images/user05.png" alt="Minimalist lawn with gravel edge and trees"></a>
+      <a href="images/user06.png" class="tile"><img loading="lazy" src="images/user06.png" alt="Curved border with seasonal color"></a>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="container grid-3">
     <div>
       <h4>Green Albion Landscaping</h4>
-      <p>Natural, simple and elegant gardens. Designed with nature in mind.<br>
-      Leominster HR6 8UL<br>Herefordshire</p>
+      <p>
+        Natural, simple and elegant gardens. Designed with nature in mind.<br>
+        Leominster HR6 8UL<br>
+        Herefordshire
+      </p>
     </div>
     <div>
       <h4>Newsletter</h4>
-      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
         <input type="hidden" name="form-name" value="subscribe" />
-        <p class="hidden"><label>Do not fill: <input name="bot-field" /></label></p>
+        <p class="hidden" aria-hidden="true">
+          <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+        </p>
         <div class="row">
           <input type="email" name="email" placeholder="Your email" required>
           <button type="submit">Subscribe</button>
@@ -52,13 +84,16 @@
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
-      <a href="tel:+447703149949">07703149949</a><br/>
-      Herefordshire, UK</p>
+      <p>
+        <a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
+        <a href="tel:+447703149949">07703149949</a><br/>
+        Herefordshire, UK
+      </p>
     </div>
   </div>
   <div class="container tiny">© 2025 Green Albion Landscaping</div>
 </footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
