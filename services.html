@@ -3,56 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Green Albion Landscaping</title>
-  <meta name="description" content="Garden design and maintenance — simple, elegant and sustainable." />
+  <title>Services — Green Albion Landscaping</title>
+  <meta name="description" content="Garden design, build and year-round care in Herefordshire — calm, elegant and nature-friendly." />
+  <link rel="canonical" href="https://greenalbion.co.uk/services.html" />
+
+  <meta property="og:title" content="Services — Green Albion Landscaping" />
+  <meta property="og:description" content="Design, build and maintenance in Herefordshire." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://greenalbion.co.uk/services.html" />
+  <meta property="og:image" content="https://greenalbion.co.uk/images/user02.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services — Green Albion Landscaping" />
+  <meta name="twitter:description" content="Design, build and maintenance in Herefordshire." />
+  <meta name="twitter:image" content="https://greenalbion.co.uk/images/user02.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
 <header class="site-header" role="banner">
   <div class="container flex between center">
-    <a class="logo" href="index.html">Green Albion Landscaping</a>
+    <a class="logo" href="index.html" aria-label="Green Albion Landscaping — home">Green Albion Landscaping</a>
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="page-header"><div class="container">
-  <h1>Services</h1>
-  <p>From concept to aftercare — end-to-end garden design and maintenance.</p>
-</div></section>
-
-<section class="container grid-3 cards">
-  <div class="card"><h3>Garden Design</h3><p>Concept, planting plan and materials. Minimalism that ages well.</p></div>
-  <div class="card"><h3>Build &amp; Planting</h3><p>We coordinate groundworks, surfaces and planting to match the design.</p></div>
-  <div class="card"><h3>Care &amp; Maintenance</h3><p>Seasonal pruning, feeding, irrigation checks and plant health monitoring.</p></div>
-</section>
-
-<section class="stripe">
-  <div class="container flex between center">
-    <div>
-      <h2>Service Subscription</h2>
-      <p>Ongoing care: monthly visits, reports and priority support.</p>
+<main id="main">
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Designing, shaping and caring for gardens in Herefordshire — combining simplicity, elegance and respect for nature.</p>
     </div>
-    <a class="btn" href="contact.html">Ask about plans</a>
-  </div>
-</section>
+  </section>
+
+  <section class="container grid-2" style="margin-top:40px">
+    <div class="card">
+      <h2>Garden Design</h2>
+      <p>Tailored garden plans reflecting the British landscape, your lifestyle and the character of your home. We create clear layouts that feel natural and timeless.</p>
+    </div>
+    <div class="card">
+      <h2>Landscaping &amp; Build</h2>
+      <p>Professional installation and careful project management. Paths, lawns, planting beds and features are realised with respect for the environment and long-term harmony.</p>
+    </div>
+  </section>
+
+  <section class="container grid-2" style="margin-top:30px">
+    <div class="card">
+      <h2>Maintenance</h2>
+      <p>Ongoing seasonal care to keep your garden thriving with minimal intervention — from pruning and soil care to wildlife-friendly practices.</p>
+    </div>
+    <div class="card">
+      <h2>Consultation</h2>
+      <p>We listen first. Whether you need a small redesign or a full transformation, our consultation outlines your options, phases and budgets clearly.</p>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="container grid-3">
     <div>
       <h4>Green Albion Landscaping</h4>
-      <p>Natural, simple and elegant gardens. Designed with nature in mind.<br>
-      Leominster HR6 8UL<br>Herefordshire</p>
+      <p>
+        Natural, simple and elegant gardens. Designed with nature in mind.<br>
+        Leominster HR6 8UL<br>
+        Herefordshire
+      </p>
     </div>
     <div>
       <h4>Newsletter</h4>
-      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
         <input type="hidden" name="form-name" value="subscribe" />
-        <p class="hidden"><label>Do not fill: <input name="bot-field" /></label></p>
+        <p class="hidden" aria-hidden="true">
+          <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+        </p>
         <div class="row">
           <input type="email" name="email" placeholder="Your email" required>
           <button type="submit">Subscribe</button>
@@ -62,13 +95,16 @@
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
-      <a href="tel:+447703149949">07703149949</a><br/>
-      Herefordshire, UK</p>
+      <p>
+        <a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
+        <a href="tel:+447703149949">07703149949</a><br/>
+        Herefordshire, UK
+      </p>
     </div>
   </div>
   <div class="container tiny">© 2025 Green Albion Landscaping</div>
 </footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
