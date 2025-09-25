@@ -3,21 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Green Albion Landscaping</title>
-  <meta name="description" content="Contact Green Albion Landscaping in Herefordshire — we reply within one working day." />
-  <link rel="canonical" href="https://greenalbion.co.uk/contact.html" />
-
-  <meta property="og:title" content="Contact — Green Albion Landscaping" />
-  <meta property="og:description" content="Contact Green Albion Landscaping in Herefordshire — we reply within one working day." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://greenalbion.co.uk/contact.html" />
-  <meta property="og:image" content="https://greenalbion.co.uk/images/user02.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact — Green Albion Landscaping" />
-  <meta name="twitter:description" content="Contact Green Albion Landscaping in Herefordshire — we reply within one working day." />
-  <meta name="twitter:image" content="https://greenalbion.co.uk/images/user02.jpg" />
-
+  <title>Contact – Green Albion Landscaping</title>
+  <meta name="description" content="Contact Green Albion Landscaping – garden design, landscaping and maintenance in Herefordshire, UK." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -25,81 +12,87 @@
 </head>
 <body>
 
-<header class="site-header" role="banner">
+<header class="site-header">
   <div class="container flex between center">
-    <a class="logo" href="index.html" aria-label="Green Albion Landscaping — home">Green Albion Landscaping</a>
-    <nav class="nav" aria-label="Primary">
+    <a class="logo" href="index.html">Green Albion Landscaping</a>
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
 
-<main id="main">
-  <section class="page-header">
-    <div class="container">
-      <h1>Contact</h1>
-      <p>Let’s talk about your garden. We reply within one working day.</p>
-    </div>
-  </section>
+<section class="page-header container">
+  <h1>Contact Us</h1>
+  <p>Have a question or want to request a quote? Send us a message and we’ll get back to you shortly.</p>
+</section>
 
-  <section class="container">
-    <div class="grid-2">
-      <div class="card">
-        <h3>Contact form</h3>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
-          <input type="hidden" name="form-name" value="contact" />
-          <!-- hidden field for bots -->
-          <p class="hidden" aria-hidden="true">
-            <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
-          </p>
+<section class="container grid-2">
+  <div>
+    <h2>Send us a message</h2>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="extra-info">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden">
+        <label>Extra info: <input name="extra-info" /></label>
+      </p>
+      <p>
+        <label>Name:<br/>
+          <input type="text" name="name" required>
+        </label>
+      </p>
+      <p>
+        <label>Email:<br/>
+          <input type="email" name="email" required>
+        </label>
+      </p>
+      <p>
+        <label>Phone:<br/>
+          <input type="text" name="phone">
+        </label>
+      </p>
+      <p>
+        <label>Message:<br/>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+      </p>
+      <p>
+        <button class="btn" type="submit">Send Message</button>
+      </p>
+      <small>Thank you for your interest — we’ll reply as soon as possible.</small>
+    </form>
+  </div>
 
-          <label for="first_name">First name</label>
-          <input type="text" id="first_name" name="first_name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="+44 ..." required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit" class="btn">Send</button>
-        </form>
-      </div>
-      <div class="card">
-        <h3>Direct contact</h3>
-        <p>
-          <a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
-          <a href="tel:+447703149949">07703149949</a><br/>
-          Herefordshire, UK
-        </p>
-      </div>
-    </div>
-  </section>
-</main>
+  <div>
+    <h2>Our Details</h2>
+    <p>
+      Green Albion Landscaping<br/>
+      Leominster HR6 8UL, Herefordshire<br/><br/>
+      Phone: 07703149949<br/>
+      Email:<br/>
+      <a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
+      <a href="mailto:greenalbionlandscaping@gmail.com">greenalbionlandscaping@gmail.com</a>
+    </p>
+    <p>
+      Follow us on social media for tips and news.
+    </p>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="container grid-3">
     <div>
       <h4>Green Albion Landscaping</h4>
-      <p>
-        Natural, simple and elegant gardens. Designed with nature in mind.<br>
-        Leominster HR6 8UL<br>
-        Herefordshire
-      </p>
+      <p>Natural, simple and elegant gardens. Designed with nature in mind.<br>
+      Leominster HR6 8UL<br>Herefordshire</p>
     </div>
     <div>
       <h4>Newsletter</h4>
-      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="extra-info">
         <input type="hidden" name="form-name" value="subscribe" />
-        <p class="hidden" aria-hidden="true">
-          <input name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+        <p class="hidden">
+          <label>Extra info: <input name="extra-info" /></label>
         </p>
         <div class="row">
           <input type="email" name="email" placeholder="Your email" required>
@@ -112,7 +105,8 @@
       <h4>Contact</h4>
       <p>
         <a href="mailto:contact@greenalbion.co.uk">contact@greenalbion.co.uk</a><br/>
-        <a href="tel:+447703149949">07703149949</a><br/>
+        <a href="mailto:greenalbionlandscaping@gmail.com">greenalbionlandscaping@gmail.com</a><br/>
+        07703149949<br/>
         Herefordshire, UK
       </p>
     </div>
